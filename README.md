@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is a e-commerce web application made with react and redux. This app has all the basic functionality that should
 be supported by e-commerce websites.
 
+Note: .env.local file is included as it contains the API Key for the firebase
+
+
 1. Authentication:
 
 Firebase is used for authenticating user. Here user can create their account/Signup of Login if they have
