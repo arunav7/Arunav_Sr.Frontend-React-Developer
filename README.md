@@ -2,69 +2,45 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Install and Run
+1. run npm install to install dependencies
+2. npm start to run the application at localhost:3000
 
-In the project directory, you can run:
+### PROJECT DETIALS
 
-### `npm start`
+This is a e-commerce web application made with react and redux. This app has all the basic functionality that should
+be supported by e-commerce websites.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Authentication:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Firebase is used for authenticating user. Here user can create their account/Signup of Login if they have
+existing account. Email and Password is used for login and signup functionality.
 
-### `npm test`
+2. Styling Frameworks:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React-bootstrap + bootstrap is used for adding some default styling
 
-### `npm run build`
+3. State Management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Redux, React-Redux, Redux-thunk have been used to manage the global state for this e-commerce websites.
+However redux is implemented using react-redux hooks instead of connect, mapState and mapDispatch methods.
+Instead useSelector and useDispatch hase been used from redux to achieve the same redux functionality, due
+to the fact that functional component is used instead of class components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Routing:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React-Router-Dom is used for routing between the components, howewer routes are not protected as it was not
+mentioned in the functionality.
 
-### `npm run eject`
+5. Basic Workflow:
+    1. Home Page will be loaded 
+    2. User can add product in cart
+    3. In Summary section total price will be updated as product is added in the cart
+    4. Cart items will also be updated
+    5. From cart section user can checkout
+    6. After checkout success message will be displayed and after 1 sec user will be
+       redirected to the home page and cart items will be cleared
+    7. If user is not logged in then they cannot checkout and have to login or signup(if new user) first
+    8. USer will be redirected automatically to login page if tries to checkout without logging in
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
