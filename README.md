@@ -16,6 +16,11 @@ be supported by e-commerce websites.
 Firebase is used for authenticating user. Here user can create their account/Signup of Login if they have
 existing account. Email and Password is used for login and signup functionality.
 
+default email : arunav@abc.com
+default password: 123456
+
+( Guest can also create their account in signup section )
+
 2. Styling Frameworks:
 
 React-bootstrap + bootstrap is used for adding some default styling
