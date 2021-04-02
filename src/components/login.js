@@ -9,21 +9,21 @@ import { login } from '../store/actions/auth'
 export default function Login() {
   const emailRef = useRef()
   const passwordRef = useRef()
-  const [error, setError] = useState("")
+  const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const history = useHistory()
   const dispatch = useDispatch()
 
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault()
 
     try {
-      setError("")
+      setError('')
       setLoading(true)
       dispatch(login(emailRef.current.value, passwordRef.current.value))
-      history.push("/")
+      history.push('/')
     } catch {
-      setError("Failed to log in")
+      setError('Failed to log in')
     }
 
     setLoading(false)

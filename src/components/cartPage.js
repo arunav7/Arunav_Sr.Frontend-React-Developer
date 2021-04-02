@@ -29,7 +29,7 @@ export default function CartPage() {
     return (
         <div>
             <Header />
-            { cartItems.length > 0 ? cartItemsJsx : <p>Please Add Items in Cart</p>  }
+            { cartItems.length > 0 ? cartItemsJsx : <h4>Please Add Items in Cart</h4>  }
             <NavLink to={path}>
                 <Button variant='success' disabled={disabled} className='mt-2'> Checkout </Button>
             </NavLink>

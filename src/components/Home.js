@@ -40,7 +40,7 @@ function App() {
                       <Card.Subtitle className='mb-2 text-muted'>{items.brand}</Card.Subtitle>
                       <Card.Text>Price: Rs. {items.price}</Card.Text>
                       <Card.Text>Discount: Rs. {items.discountPrice}</Card.Text>
-                      <Button variant='light' onClick={() => addToCart(items)}>Add To Cart</Button>
+                      <Button variant='outline-info' onClick={() => addToCart(items)}>Add To Cart</Button>
                     </Card.Body>
                   </Card>
                 )
